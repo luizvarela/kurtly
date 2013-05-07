@@ -1,7 +1,42 @@
 doctype html
 html
   head
-    title Simple Shortner
-    
+    title Shortly
+	meta http-equiv="Content-Type" content="text/html; charset=utf-8"
+	meta content="IE=edge" http-equiv="X-UA-Compatible"
+	meta name="keywords" content="shortner, awesome, save, share, shorten"
+	meta name="description" content="Shortly"
+	meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+		
+	link href="css/kube.css" rel="stylesheet" type="text/css"
+	script src="http://use.edgefonts.net/rochester.js" 
+	
   body
-    == yield
+	header
+		.container
+			
+			ul.pull-right
+				li 
+					form action="/shorten" class="shorten"
+						input name="shorten" type="text" placeholder="Paste a link to shorten it"
+						input type="submit" value="Shorten" class="btn"
+						
+			a.brand Shortly			
+			
+	section
+		== yield
+		
+	footer#footer
+		.container
+			ul
+				li 
+					a href="/help" Help
+				li 
+					a href="/about" About
+				li 
+					a href="/contact" Contact
+							
+				li class="last"
+					a href="https://github.com/michelsazevedo/shortly" Fork on github
+					
+			p &copy; Shortly

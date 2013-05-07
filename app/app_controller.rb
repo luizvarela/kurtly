@@ -14,7 +14,5 @@ helpers do
   get '/' do
     slim :index
   end
-
-  
   
 end
