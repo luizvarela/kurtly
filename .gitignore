@@ -4,6 +4,8 @@
 # Ignore the default SQLite database.
 /db/*.sqlite3
 
+dump.rdb
+
 config/database.yml
 db/schema.rb
 
