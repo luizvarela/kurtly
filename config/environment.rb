@@ -7,7 +7,7 @@ require 'hiredis'
 Bundler.require :default
 Dir.glob(File.expand_path(File.dirname(__FILE__)+'/../app/models/**/*.rb')).each{|f| require f}
 
-DOMAIN = "http://short.ly/"
+DOMAIN = "http://kurt.ly/"
 
 env = ENV["REDIS_URL"] || "redis://127.0.0.1:6379/"
 uri = URI.parse(env)

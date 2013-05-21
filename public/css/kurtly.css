@@ -1,0 +1,165 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::-moz-selection {
+    background: none repeat scroll 0 0 #A36DCA;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+a {
+    color: #6D6D6D;
+    display: block;
+    line-height: 36px;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1) 0s;
+}
+a:hover {
+    color: #000000;
+}
+
+body {
+	background-color: #EEEEEE;
+	font-family: "Lato",Arial,sans-serif;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+	
+.wrapper {
+	font-size: 20px;
+	padding: 20px 10px;
+	margin-top: 10%;
+	width: 600px;
+}
+
+h1 {
+	color: #464646;
+	font-family: "Lato",Arial,sans-serif;
+	font-size: 52px;
+	font-weight: 100;
+}	
+
+.intro {
+	font-size: 22px;
+	font-weight: 400;
+	margin-bottom: 20px;
+}
+
+.content {
+	clear: left;
+	display: block;
+	width: 600px;
+	float: left;
+	
+}
+
+.actions {
+	padding: 20px 10px;
+	float: left;
+}
+
+form {
+	float: left;
+	padding: 20px 0;
+	margin: 10px 0;
+}
+
+form input {
+	float: left;
+	display: block;
+	margin: 0 10px;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="email"], 
+input[type="tel"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    color: #989898;
+    display: block;
+    font-family: "PT Sans",Arial,sans-serif;
+    font-size: 18px;
+    height: 22px;
+    line-height: 1em;
+    padding: 11px 8px 8px;
+    position: relative;
+	width: 400px;
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1) 0s;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus {
+	border-color: #2CCEBF;
+    box-shadow: 0 0 5px rgba(23, 201, 185, 0.7), 0 0 5px rgba(0, 0, 0, 0.1) inset;
+    color: #646464;
+} 
+
+.btn-signup,
+.btn-signin,
+.btn-shorten
+ {
+	border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    height: 51px;
+    line-height: 20px;
+    margin: 20px 20px 0 0;
+    padding: 10px 30px;
+}
+
+.btn-shorten {
+	border: 0;
+	height: 42px;
+	font-family: "Lato",Arial,sans-serif;
+	font-size: 16px;
+	background: none repeat scroll 0 0 #000000;
+	margin: 0;
+}
+
+
+.btn-signup {
+	background: none repeat scroll 0 0 #16C9B9;
+}
+
+.btn-signin {
+	background: none repeat scroll 0 0 #9463B7;
+}
+
+footer {
+	height: 60px;
+	background: #262626;
+	box-shadow: 2px -5px 5px rgba(0, 0, 0, 0.3);
+    display: block;
+    overflow: hidden;
+    width: 100%;
+	position: absolute;
+	z-index: 15;
+	bottom: 0;
+}
+
+.brand {
+	padding: 14px 0;
+	color: #16AD9F!important;
+	font-size: 40px;
+	font-family: rochester, cursive;
+	font-weight: 100;
+}
+
+.brand span {
+	color: #5F4672;
+}
+

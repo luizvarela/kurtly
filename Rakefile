@@ -13,7 +13,6 @@ unless ENV['RACK_ENV'] == 'production'
     RSpec::Core::RakeTask.new(:features) do |spec|
       spec.pattern = 'spec/features/**/*_spec.rb'
     end
-    
   end
   
   task :spec => [n[:models], n[:features]]

@@ -1,42 +1,29 @@
 doctype html
 html
   head
-    title Shortly
+    title Kurt.ly
 	meta http-equiv="Content-Type" content="text/html; charset=utf-8"
 	meta content="IE=edge" http-equiv="X-UA-Compatible"
 	meta name="keywords" content="shortner, awesome, save, share, shorten"
-	meta name="description" content="Shortly"
+	meta name="description" content="kurtly"
 	meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
 		
-	link href="css/kube.css" rel="stylesheet" type="text/css"
-	script src="http://use.edgefonts.net/rochester.js" 
-	
+	link href="css/kurtly.css" rel="stylesheet" type="text/css"
+	script src="http://use.edgefonts.net/rochester;lato.js" 
+
+
   body
-	header
-		.container
+	.container
+		.wrapper
+			h1	Do more with your links
+			p.intro The new way to bookmark, organize, and share the things you care about online.				
 			
-			ul.pull-right
-				li 
-					form action="/shorten" class="shorten" method="post"
-						input name="url" type="text" placeholder="Paste a link to shorten it"
-						input type="submit" value="Shorten" class="btn"
-						
-			a.brand Shortly			
-			
-	section
-		== yield
+	.container
+			== yield
+
 		
-	footer#footer
+	footer
 		.container
-			ul
-				li 
-					a href="/help" Help
-				li 
-					a href="/about" About
-				li 
-					a href="/contact" Contact
-							
-				li class="last"
-					a href="https://github.com/michelsazevedo/shortly" Fork on github
-					
-			p &copy; Shortly
+			a href="./" class="brand"
+				| kurt
+				span .ly

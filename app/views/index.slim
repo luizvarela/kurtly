@@ -1,21 +1,12 @@
-.campaign
-	.container
-		.row
-			.header-text
-				h2 Do more with your links
-				h3 The new way to bookmark, organize, and share the things you care about online.
-				
-.what-do-we-do
-	.container
-		.row
-			.third
-				h4 Organize your links
-				p Bundle links privately or publicly around a theme. Invite collaborators. 
+.content
+	form action="/shorten" method="post"
+		input type="text" name="url" placeholder="Paste a link to shorten it"
+		input type="submit" value="shorten" class="btn-shorten"
 	
-			.third
-				h4 Count your clicks
-				p See how popular your shared links become. 
+	.actions	
+		a href="signup" class="btn-signup"
+			| Join us Now
 
-			.third
-				h4 One-stop sharing
-				p A single way to share your links across Facebook, Twitter, and email. 
+		a href="signin" class="btn-signin"
+			| Sign In	
+	
